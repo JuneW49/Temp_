@@ -1,17 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-	<body>
-		<h1> CALCULATOR </h1>
-		<form action="action_page.php">
-			<input type="text" name="" value="">
-			<input type ="submit" value="Submit">
-		</form>
-
-	</body>
-</html>
- -->
-
-
 <html>
 <head><title>Calculator</title></head>
 <body>
@@ -28,12 +14,7 @@ Type an expression in the following box (e.g., 10.5+20*3/25).
 
 	function correct_format($expr_str) {
 		$temp_expr = "";
-		// echo " I AM HERE" . "<br>";
-		// echo "$exprs_str" . "<br>";
-		// echo strlen($expr_str) . " <br>";
-		// echo "$expr_str[0]" . "<br>";
-		// echo "$expr_str[1]" . "<br>";
-		// echo "$expr_str[2]" . "<br>" . strlen($curr_expr);
+
 
 
 		for ($i = 0; $i < strlen($expr_str); $i++){
@@ -44,8 +25,7 @@ Type an expression in the following box (e.g., 10.5+20*3/25).
 				$temp_expr .= " " . $expr_str[$i] . " ";
 			}
 		}
-		// echo strlen($temp_expr) . "<br>";
-		// echo $temp_expr . "<br>";
+
 	return $temp_expr;
 	}
 
@@ -103,18 +83,14 @@ Here are some(but not limit to) reasonable test cases:
 			}
 
 			if ((!$result && is_bool($result))) { //check if result is valid
-				// $test = '-' . ' ' . '-';
-				// echo "$test  ........ ";
+
 				echo "$temp_expr" . "<br>";
 				// echo "here";
 				echo "Invalid input...";
 			}
 			else {
 				echo "$temp_expr = $result" . "<br>";	
-				// echo eval("return 2 . 2;");
-
-				// echo "here" . preg_match("/el/", "hello");
-				// echo "here" . "<br>";
+	
 			}
 
 		
