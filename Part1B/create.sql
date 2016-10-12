@@ -1,6 +1,6 @@
 /*this file loads all tables needed in the CS143 database*/
 
-
+/*load from file*/
 CREATE TABLE Movie(id int, title varchar(100), year int, rating varchar(10), company varchar(50));
 CREATE TABLE Actor(id int, last varchar(20), first varchar(20), sex varchar(6), dob date, dod date);
 CREATE TABLE Director(id int, last varchar(20), first char(20), dob date, dod date);
@@ -10,6 +10,7 @@ CREATE TABLE MovieActor(mid int, aid int, role varchar(50));
 
 CREATE TABLE Review(name varchar(20), time timestamp, mid int, rating int, comment varchar(500));/*awaits user input*/
 
+/*keep track in case of new entries*/
 CREATE TABLE MaxPersonID(id int);
 INSERT INTO MaxPersonID VALUES(69000);
 CREATE TABLE MaxMovieID(id int);
